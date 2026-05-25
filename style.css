@@ -1,0 +1,128 @@
+.html{
+  scroll-behavior: smooth;
+}
+
+p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.frontend{
+  display: block;
+  margin-left: 3px;
+  height: 200px;
+  width: 300px;
+  border: 2px;
+  border-color: aliceblue;
+  border-style: solid;
+  color: white;
+  border-radius: 15px;
+
+}
+ .header h1{
+  margin: 0px;
+  position: absolute;
+  top: 80px;
+ }
+
+.backend{
+  margin-left: 30px;
+  display: block;
+  border: 2px;
+  border-style: solid;
+  border-color: aliceblue;
+ height: 200px;
+ width: 300px;
+ color: white;
+ border-radius: 15px;
+ 
+
+}
+
+.database{
+  display: block;
+  border-color: white;
+  border: 2px;
+  border-style: solid;
+  border-color: aliceblue;
+  color: white;
+  height: 200px;
+  width: 300px;
+  border-radius: 15px;
+  margin-left: 30px;
+
+}
+
+.database ul{
+  list-style: none;
+}
+.frontend ul{
+  list-style: none;
+}
+.backend ul{
+  list-style: none;
+}
+.tools ul{
+  list-style: none;
+}
+.tools{
+  margin-left: 30px;
+    display: block;
+    border: 2px;
+    border-style: solid;
+    border-color: aliceblue;
+    height: 200px;
+    width: 300px;
+    color: white;
+    border-radius: 15px;
+}
+
+body{
+  background-color: rgb(212, 212, 224);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Navbar{
+  
+  
+  
+  
+}
+
+.Navbar ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  
+  
+}
+
+.Navbar ul li{
+  float: left;
+
+}
+
+.Navbar ul li a{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: rgb(43, 127, 206);
+}
+
+.Navbar ul li a:hover{
+  background-color: rgb(105, 163, 202);
+}
+
+.Main h1 h2{
+ margin: 10px;
+}
+
+.Main h1 h2 p{
+  text-align: center;
+  
+}
