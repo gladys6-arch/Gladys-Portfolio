@@ -1,128 +1,272 @@
-.html{
-  scroll-behavior: smooth;
-}
+/* RESET */
 
-p{
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.frontend{
-  display: block;
-  margin-left: 3px;
-  height: 200px;
-  width: 300px;
-  border: 2px;
-  border-color: aliceblue;
-  border-style: solid;
-  color: white;
-  border-radius: 15px;
-
-}
- .header h1{
-  margin: 0px;
-  position: absolute;
-  top: 80px;
- }
-
-.backend{
-  margin-left: 30px;
-  display: block;
-  border: 2px;
-  border-style: solid;
-  border-color: aliceblue;
- height: 200px;
- width: 300px;
- color: white;
- border-radius: 15px;
- 
-
-}
-
-.database{
-  display: block;
-  border-color: white;
-  border: 2px;
-  border-style: solid;
-  border-color: aliceblue;
-  color: white;
-  height: 200px;
-  width: 300px;
-  border-radius: 15px;
-  margin-left: 30px;
-
-}
-
-.database ul{
-  list-style: none;
-}
-.frontend ul{
-  list-style: none;
-}
-.backend ul{
-  list-style: none;
-}
-.tools ul{
-  list-style: none;
-}
-.tools{
-  margin-left: 30px;
-    display: block;
-    border: 2px;
-    border-style: solid;
-    border-color: aliceblue;
-    height: 200px;
-    width: 300px;
-    color: white;
-    border-radius: 15px;
-}
-
-body{
-  background-color: rgb(212, 212, 224);
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.Navbar{
-  
-  
-  
-  
+html {
+  scroll-behavior: smooth;
 }
 
-.Navbar ul{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  display: flex;
-  
-  
-}
 
-.Navbar ul li{
-  float: left;
+/* BODY */
+
+body {
+  background-color: #081b29;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 160px;
+  padding: 0px 10px;
 
 }
 
-.Navbar ul li a{
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
+
+/* NAVBAR */
+
+.Sidenav{
+  height:100%;
+  width: 160px;
+  position:fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #081b29;
+  overflow-x: hidden;
+  padding-top: 20px;
+  border-right:  white;
+  border: 1px;
+}
+
+.Sidenav ul li a{
+  padding: 6px 8px 6px 16px;
   text-decoration: none;
-  background-color: rgb(43, 127, 206);
+  font-size: 25px;
+  color: rgba(223, 108, 14, 0.527);
+  display: block;
 }
 
-.Navbar ul li a:hover{
-  background-color: rgb(105, 163, 202);
+
+.Sidenav ul li a:hover{
+  color: white;
 }
 
-.Main h1 h2{
- margin: 10px;
-}
-
-.Main h1 h2 p{
-  text-align: center;
+@media  screen and (max-height:450px) {
+  .Sidenav {padding-top: 15px;}
+  .Sidenav ul li a {font-size: 18px;}
   
+}
+
+
+/* GENERAL SECTION SPACING */
+
+section {
+  padding: 100px 10%;
+}
+
+
+/* HOME SECTION */
+
+#home {
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 50px;
+}
+
+/* Home section */
+
+.home{
+  min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* HOME TEXT */
+
+.home-content {
+  max-width: 600px;
+  width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 56px;
+    align-items: center;
+  }
+
+
+.home-content h1 {
+  font-size: 40px;
+}
+
+.home-content h3 {
+  font-size: 32px;
+  margin-top: 5px;
+  color: rgb(152, 74, 224);
+}
+
+.home-content p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-top: 10px;
+}
+
+.home-content button {
+  margin-top: 10px;
+  margin-right: 20px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+
+.b-container{
+  display: flex;
+  gap: 15px;
+  
+
+}
+
+.b-container a{
+  text-decoration: none;
+}
+.btn1{
+  width: 250px;
+}
+
+/* HOME IMAGE */
+
+.home-image img {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  top: 50px;
+  right: 50px;
+  object-fit: cover;
+}
+
+
+/* ABOUT SECTION */
+
+#about h2,
+#skills h2,
+#projects h2,
+#services h2,
+#contact h2 {
+  font-size: 40px;
+  color: rgb(152, 74, 224);
+  margin-bottom: 30px;
+}
+
+#about p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  max-width: 900px;
+}
+
+#about a{
+  cursor: pointer;
+}
+
+/* SKILLS */
+
+.s-container{
+  
+  gap: 20px;
+
+  display: flex;
+}
+
+.s-container div{
+  margin: 10px;
+  
+    padding: 20px;
+    font-size: 15px;
+    border-style: groove;
+    border-width: 0.02px;
+    border-radius: 30px;
+    width: 300px;
+     
+}
+.s-container div h3{
+  margin-bottom: 20px;
+}
+
+.frontend,
+.backend,
+.database,
+.tools {
+  margin-bottom: 40px;
+}
+
+#skills ul {
+  
+  padding-left: 20px;
+}
+
+#skills li {
+  margin-bottom: 10px;
+}
+
+#skills h2{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+
+/* SERVICES */
+
+#services ul {
+  padding-left: 20px;
+}
+
+#services li {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+/* PROJECTS*/
+
+.container{
+  display: flex;
+
+  
+}
+
+.container div{
+  margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+    border-style: groove;
+    border-width: 0.02px;
+    border-radius: 30px;
+    width: 1000px;
+    height: 450px;
+
+
+}
+
+.container div p a{
+  cursor: pointer;
+}
+
+
+
+
+/* CONTACT */
+
+#contact a {
+  color: white;
+  font-size: 35px;
+  margin-right: 20px;
 }
